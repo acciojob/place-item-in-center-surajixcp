@@ -3,14 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css"/>
-    <title>Place Item in Center</title>
+    <title>Center Item Example</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* CSS for the holder */
+        .holder {
+            display: flex;                /* Enable flexbox */
+            justify-content: center;      /* Center items horizontally */
+            align-items: center;          /* Center items vertically */
+            width: 100vw;                 /* Full viewport width */
+            height: 100vh;                /* Full viewport height */
+        }
+
+        /* CSS for item-1 */
+        .item-1 {
+            width: 100px;                 /* Width of item-1 */
+            height: 100px;                /* Height of item-1 */
+            background-color: red;        /* Red background color */
+        }
+    </style>
 </head>
 <body>
     <div class="holder">
-        <div class="item item-1">
-            Place me in center using flex
-        </div>
+        <div class="item-1"></div>
     </div>
 </body>
 </html>
